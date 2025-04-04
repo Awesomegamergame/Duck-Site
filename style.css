@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+    padding-bottom: 5px;
+}
+
+/* Header (Homepage and Subpages) */
+.main-header {
+  background: #c5f2f0;
+  padding: 1.2rem 1rem;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+}
+
+.top-nav ul,
+.subpage-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+
+.top-nav a,
+.subpage-nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #00796b;
+  background: transparent;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.top-nav a:hover,
+.subpage-nav a:hover {
+  background-color: #b2dfdb;
+  color: #004d40;
+}
+
+/* Container */
+.container {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Section Cards */
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card h2, h3, p {
+  text-align: center;
+}
+
+.card ul,
+.card ol {
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left; /* Keeps the numbers/bullets aligned with the text */
+  margin: 0 auto; /* Centers the entire list block within the card */
+  width: fit-content; /* Makes sure the list doesn't stretch across the whole container */
+}
+
+/* Video Embed */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Maintains 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 1rem;
+    width: 80%; /* Adjusts the width of the video to 80% of the container */
+    margin: 0 auto; /* Centers the video */
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    width: 100%; /* Takes up 100% of the .video-wrapper width */
+    height: 100%; /* Adjusts height to maintain the aspect ratio */
+    border: none;
+  }
+
+/* Link Buttons */
+.section-links .link-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-link {
+  padding: 0.6rem 1.2rem;
+  background-color: #aed581;
+  color: #2e7d32;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 1.5rem;
+}
+
+.btn-link:hover {
+  background-color: #9ccc65;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  margin-top: auto;
+  border-top: 1px solid #ccc;
+}

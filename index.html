@@ -1,52 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-     <nav>
-        <ul>
-          <li><a href="#funfacts">Fun Facts</a></li>
-          <li><a href="#aquireduck">How to Aquire a Duck</a></li>
-          <li><a href="#aboutducks">More About Ducks</a></li>
-        </ul>
-      </nav>
-      <main>
-      
-      <article>
-        <h1>About Ducks</h1>
-        <h2 id="funfacts">Fun Facts</h2>
-        <ul>
-            <li>Are social</li>
-            <li>They have waterproof feathers</li>
-            <li>Like to dance</li>
-            <li>Bond through food</li>
-            <li>Their beaks are VERY sensitive</li>
-        </ul>
-        </article>
-        
-        <article>
-        <h2 id="aquireduck">How to Aquire a Duck</h2>
-        <ol>
-            <li>Find the duck</li>
-            <li>Don't chase after it, introduce yourself</li>
-            <li>Pick up the duck gently</li>
-            <li>Put the duck down (Don't kidnap it)</li>
-        </ol>
-        <p>If instructions unclear watch video</p>
-        <iframe width="533"height="300" src="https://www.youtube.com/embed/RhtiDYLbfF4" title="How to Pick Up a Duck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </article>
-        
-        <article>
-        <h2 id="aboutducks">More About Ducks</h2>
-        <a href="habitat.html">Habitat</a>
-        <a href="food.html">Food</a>
-        <a href="Gallery.html">Gallery</a>
-        </article>
-        </main>
-    </body>
-    
-    <footer>
-        <p>Don't contact me -__-</p>
-    </footer>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duck Central</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#funfacts">Fun Facts</a></li>
+        <li><a href="#aquireduck">How to Acquire</a></li>
+        <li><a href="#more">More About Ducks</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to Duck Central</h1>
+  </header>
+
+  <main class="container">
+    <section id="funfacts" class="card">
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>Are social</li>
+        <li>They have waterproof feathers</li>
+        <li>Like to dance</li>
+        <li>Bond through food</li>
+        <li>Their beaks are VERY sensitive</li>
+      </ul>
+    </section>
+
+    <section id="aquireduck" class="card">
+      <h2>How to Acquire a Duck</h2>
+      <ol>
+        <li>Find the duck</li>
+        <li>Don't chase after it, introduce yourself</li>
+        <li>Pick up the duck gently</li>
+        <li>Put the duck down (Don't kidnap it)</li>
+      </ol>
+      <p>If instructions unclear, watch this video:</p>
+      <br>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/RhtiDYLbfF4" title="How to Pick Up a Duck" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="more" class="card section-links">
+      <h2>More About Ducks</h2>
+      <div class="link-grid">
+        <a href="habitat/" class="btn-link">Habitat</a>
+        <a href="food/" class="btn-link">Food</a>
+        <a href="gallery/" class="btn-link">Gallery</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Don't contact me -__-</p>
+  </footer>
+</body>
 </html>
